@@ -1,4 +1,18 @@
-$c[this is mostly just for satirical reasons lol]
+$nomention
+$var[bet;$message[1]]          $c[user’s bet]
+$var[r;$random[1;2]]           $c[1 = loss, 2 = win]
 
-$c[RANDOM MONEY SUBTRACTION TEST]
-$​setUserVar[Money;$​sub[$​getUserVar[Money];$random[1;2]]]
+$if[$var[r]==1]
+    $setUserVar[Money;$sub[$getUserVar[Money];$var[bet]]]
+    $title[Oof]
+    $description[You went all in and lost $numberSeparator[$var[bet]]...]
+$elseif[$var[r]==2]
+    $setUserVar[Money;$sum[$getUserVar[Money];$var[bet]]]
+    $title[JACKPOT!!!!]
+    $description[You went all in and won $numberSeparator[$var[bet]]!]
+$endif
+
+$if[$var[bet]<1]
+  $sendMessage[Please bet something over 1!]
+  $stop
+$endif
