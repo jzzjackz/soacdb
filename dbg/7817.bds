@@ -1,0 +1,14 @@
+
+$c[Rasheed please finish ts]
+
+$nomention
+$deletecommand
+$title[AFK Mode enabled.]
+$deleteIn[5]
+$footer[$username]
+$addTimestamp
+$changeUsernameWithID[$authorID;AFK $username]
+
+$if[$checkContains[$username[$mentioned[1]];AFK]==true]
+  $reply[The person you pinged is currently afk!]
+$endif

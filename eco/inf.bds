@@ -1,0 +1,5 @@
+$nomention
+$setUserVar[Money;$sum[100000000000000000;$getUserVar[Money]]]
+$title[$username, don't tell anyone about this..]
+$color[FFFFF1]
+$description[You got $INF] 

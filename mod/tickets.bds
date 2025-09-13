@@ -1,0 +1,4 @@
+$nomention
+$newTicket[tickets;$username provided no subject.;You have submitted a ticket. Subject: {subject}
+An admin will be with you soon.;The ticket has been created.;We can’t handle tickets right now, please try again later.]
+$argsCheck[>1;Please include a subject. This will help the admins and get **you** a higher chance of a response..]

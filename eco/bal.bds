@@ -1,0 +1,5 @@
+$nomention 
+$thumbnail[$authorAvatar]
+$color[36393F]
+$title[Current Balance]
+$description[You have $$getUserVar[Money]!]

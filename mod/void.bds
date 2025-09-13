@@ -1,0 +1,8 @@
+$clear $nomention $deletecommand
+$title[**Void**]
+$color[#191919]
+$footer[$username - $authorID]
+$footerIcon[$authorAvatar]
+$thumbnail[$authorAvatar]
+$description[**$message messages have been thrown into the void, never to be seen again.**]
+$addReactions[🤖]

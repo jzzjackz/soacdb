@@ -1,0 +1,6 @@
+$nomention
+$setUserVar[Money;$sum[250;$getUserVar[Money]]]
+$title[$username, time for your daily reward!]
+$color[FFFFF1]
+$description[You got $250]
+$cooldown[24h;Are you trying to scam me? Ya gotta wait 24 hours before claiming your reward again.] 

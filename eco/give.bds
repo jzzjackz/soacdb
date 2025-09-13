@@ -1,0 +1,8 @@
+$setUserVar[Money;$​sum[$​getUserVar[Money;$​mentioned[1]];$message[2]];$mentioned[1]]
+$​setUserVar[Money;$​sub[$​getUserVar[Money];$​message[2]]]
+$​onlyIf[$​message[2]<$​getUserVar[Money;$​authorID];Sorry, you don't have enough money.. Broke much?]
+$​nomention
+$​color[$​random[0;9999]]
+$​allowMention
+$​title[Moneyyyyy!]
+$​description[You just gave <@$​mentioned[1]> ​$​message[2] Money!]

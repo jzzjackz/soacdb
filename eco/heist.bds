@@ -1,0 +1,12 @@
+$nomention
+
+$​cooldown[2s;you need to wait at least 2 hours between your last heist and your new one to do this command again!] 
+
+$setUserVar[Money;$sum[$getUserVar[Money;$authorID];$random[0;1000000]];$authorID]
+
+$color[$random[1;9999]]
+
+$title[**HEIST**]
+
+$description[$randomText[You and 5 friends pulled an EPIC heist on an international bank;You and 3 friends robbed the first national bank of mauritania;You By yourself rob a big international bank, trip an alarm] and make off with $random[0;1000000]]
+ 
