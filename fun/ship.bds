@@ -1,30 +1,29 @@
-$if[$channelID!=1412588450724708394] 
-$title[Sorry!]
-$description[This is an experimental feature, meaning non-admin guilds do not have access yet.]
-$footer[Error: Permission Error]
-$stop
-$endif
+
+$c[Fixed bug where bot evaluates mentioned2 even when empty, causing the command to glitch out]
 
 $var[r;0]
 
-$if[$or[$mentioned[1]==977904487668789308;$mentioned[1]==790774235202715658]]
-  $var[r;100]
-$else
+$if[$mentioned[2]==false]
   $var[r;$random[0;100]]
-$elseif[$or[$mentioned[1]==1267784864762036298;$mentioned[1]==1331104362335830151]
-  $var[r;100]
-$c[self love update]
-$elseif[$or[$mentioned[1]==1291421876651819162;$mentioned[1]==1291421876651819162]
-  $var[r;100]
 $else
-  $var[r;$random[0;100]]
+  $if[$mentioned[1]==977904487668789308 && $mentioned[2]==790774235202715658 || $mentioned[1]==790774235202715658 && $mentioned[2]==977904487668789308]
+    $var[r;100]
+  $elseif[$mentioned[1]==1267784864762036298 && $mentioned[2]==1331104362335830151 || $mentioned[1]==1331104362335830151 && $mentioned[2]==1267784864762036298]
+    $var[r;100]
+  $elseif[$mentioned[1]==813023392721535007 && $mentioned[2]==941784761075105864 || $mentioned[1]==941784761075105864 && $mentioned[2]==813023392721535007]
+    $var[r;100]
+  $else
+    $var[r;$random[0;100]]
+  $endif
+$endif
 
 $sendMessage[# <@$mentioned[1;yes]> x <@$mentioned[2;yes]>
 :heart: | their love meter is... $var[r]%]
 
+$c[a bunch of if statements that make me wanna kill myself]
 
 $if[$var[r]==1]
-$sendMessage[ts ship will NEVER work out 🥀]
+  $sendMessage[ts ship will NEVER work out 🥀]
 $elseif[$var[r]>=2]
   $if[$var[r]<=29]
     $sendMessage[its not perfect, but it could work out]
@@ -64,5 +63,5 @@ $elseif[$var[r]>=2]
 $endif
 
 $if[$var[r]==0]
-$sendMessage[man just stop beating around the bush]
+  $sendMessage[man just stop beating around the bush]
 $endif
