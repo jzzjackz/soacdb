@@ -1,0 +1,10 @@
+$if[$channelID==1412588450724708394]
+$nomention
+$setVar[clk;0;$authorID]
+$sendMessage[CCK has been reset: **cmds.modules.debug.clk**]
+$else
+$title[Sorry!]
+$description[This is an experimental feature, meaning non-admin guilds do not have access yet.]
+$footer[Error: Permission Error]
+$stop
+$endif

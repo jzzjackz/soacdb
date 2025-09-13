@@ -1,0 +1,7 @@
+$nomention
+$kickMention
+<@$mentioned[1]> has been kicked.
+$dm[<@$mentioned[1]> You have been kicked from the server!]
+$else
+$sendMessage[Permission Error 1: You don't have permission to run this command]
+$endif

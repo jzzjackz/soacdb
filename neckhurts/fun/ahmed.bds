@@ -1,0 +1,9 @@
+$nomention
+$title[Ahmed's here..]
+$description[i'm ahmed!! i goon to <@813023392721535007> by the way 😍😉👍👌]
+$footer[not this one again.. 😒]
+$if[$guildID==1398238945975861358]
+$title[Module blocked]
+$description[To comply with the rules for this guild, I have disabled this module for this guild (GUIOPTOUTERR)]
+$footer[GuildID:1398238945975861358]
+$endif

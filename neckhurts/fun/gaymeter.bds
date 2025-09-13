@@ -1,0 +1,54 @@
+$if[$channelID!=1412588450724708394] 
+$title[Sorry!]
+$description[This is an experimental feature, meaning non-admin guilds do not have access yet.]
+$footer[Error: Permission Error]
+$stop
+$endif
+
+$var[r;$random[0;100]]
+
+$sendMessage[<@$mentioned[1;yes]> x <@$mentioned[2;yes]> $var[r] % gay]
+
+$if[$var[r]==1]
+$sendMessage[ts ship will NEVER work out 🥀]
+$elseif[$var[r]>=2]
+  $if[$var[r]<=29]
+    $sendMessage[its not perfect, but it could work out]
+  $elseif[$var[r]>=30]
+    $if[$var[r]<=40]
+      $sendMessage[i can see it working out]
+    $elseif[$var[r]==41]
+      $sendMessage[https://tenor.com/view/41-42-41-but-i-got-41-gold-i-got-but-gif-15501726584146306058]
+    $elseif[$var[r]>=42]
+      $if[$var[r]<=49]
+        $sendMessage[i can see it working out]
+      $elseif[$var[r]>=50]
+        $if[$var[r]<=59]
+          $sendMessage[this is a good ship]
+        $elseif[$var[r]>=60]
+          $if[$var[r]<=66]
+            $sendMessage[you guys seem to like eachother alot!]
+          $elseif[$var[r]==67]
+            $sendMessage[TS TUFF 😂😂😂 67 MUSTARD MANGO DIDDY BLUD]
+            $sendMessage[https://tenor.com/view/kendrick-kendrick-lamar-mustard-mango-tuff-gif-8666831347696479024]
+          $elseif[$var[r]==68]
+            $sendMessage[you guys seem to like eachother alot!]
+          $elseif[$var[r]==69]
+            $sendMessage[hehe funni number]
+          $elseif[$var[r]>=70]
+            $if[$var[r]<=99]
+              $sendMessage[this ship is amazing]
+            $elseif[$var[r]==100]
+              $sendMessage[PEAK. AMAZING. I COULD HAVE NEVER SEEN A BETTER SHIP THAN THIS. ABSOLUTE CINEMA]
+              $sendMessage[https://tenor.com/view/me-atrapaste-es-cine-its-cinema-cinema-esto-es-cine-gif-17729711691959966457]
+            $endif
+          $endif
+        $endif
+      $endif
+    $endif
+  $endif
+$endif
+
+$if[$var[r]==0]
+$sendMessage[eww its a straight person🙄]
+$endif
