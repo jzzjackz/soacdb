@@ -1,0 +1,4 @@
+$c[this is mostly just for satirical reasons lol]
+
+$c[RANDOM MONEY SUBTRACTION TEST]
+$​setUserVar[Money;$​sub[$​getUserVar[Money];$random[1;2]]]
