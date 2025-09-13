@@ -1,0 +1,3 @@
+$if[$isTicket[]]
+    $closeTicket[Ticket closed]
+$endif
