@@ -13,6 +13,8 @@ $else
   $var[r;$random[0;100]]
 $elseif[$or[$mentioned[1]==1267784864762036298;$mentioned[1]==1331104362335830151]
   $var[r;100]
+$elseif[$or[$mentioned[1]==1291421876651819162;$mentioned[1]==1291421876651819162]
+  $var[r;100]
 $else
   $var[r;$random[0;100]]
 
