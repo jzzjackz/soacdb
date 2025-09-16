@@ -1,0 +1,14 @@
+$nomention
+$c[action variable for arguments]
+$var[action;$message[1]]
+
+$c[if admin does ,ban nores then it does this shit]
+$if[$var[action]==nores]
+    $ban
+    $sendMessage[<@$mentioned[1]> was banned by <@$authorID>!]
+$c[otherwise it does this shii]
+$else
+    $ban[$noMentionMessage]
+    $sendMessage[<@$mentioned[1]> was banned by <@$authorID>! Reason: $getBanReason[$mentioned[1]]
+$endif
+$c[im abto suck my brothers cock until i was 14 if this code doesnt work]

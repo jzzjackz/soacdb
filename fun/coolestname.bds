@@ -1,4 +1,7 @@
 $nomention
+$if[$authorID==813023392721535007]
+    $sendMessage[I KNOW WHO YOU ARE MR NOAM]
+$else
 $title[can you repeat that, coolestname?]]
 $description[yeah i'm racist, but why'd you have to point that out?]
 $footer[-Coolestnamefrfr on Discord]
