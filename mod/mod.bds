@@ -1,0 +1,37 @@
+$nomention
+$c[action variable for arguments]
+$var[action;$message[1]]
+
+$if[$var[action]==ban]
+    $ban[$noMentionMessage]
+    $sendMessage[<@$mentioned[1]> was banned by <@$authorID>! Reason: $getBanReason[$mentioned[1]]
+
+$elseif[$var[action]==kick]
+    $kickMention
+    <@$mentioned[1]> has been kicked.
+    $dm[<@$mentioned[1]> You have been kicked from the server!]
+
+$elseif[$var[action]==ticket]
+    $nomention
+    $newTicket[tickets;$username provided no subject.;You have submitted a ticket. Subject: {subject}
+    An admin will be with you soon.;The ticket has been created.;We can’t handle tickets right now, please try again later.]
+    $argsCheck[>1;Please include a subject. This will help the admins and get **you** a higher chance of a response..]
+
+$elseif[$var[action]==closeticket]
+    $if[$isTicket[]]
+    $closeTicket[Ticket closed]
+
+$elseif[$var[action]==void]
+    $clear $nomention $deletecommand
+    $title[**Void**]
+    $color[#191919]
+    $footer[$username - $authorID]
+    $footerIcon[$authorAvatar]
+    $thumbnail[$authorAvatar]
+    $description[**$message messages have been thrown into the void, never to be seen again.**]
+    $addReactions[🤖]
+$else
+    $title[Invalid argument]
+    $color[#ff0000]
+    $description[**Hmmm.. maybe try something else?**]
+    $footer[Error: INVALIDARGS]
